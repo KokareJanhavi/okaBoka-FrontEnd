@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity } from 'react-native';
-import styles from '../styles/homeScreen.styles';
+import {styles} from '../styles/homeScreen.styles';
 
 const moods = [
   { emoji: '😊', label: 'Happy' },

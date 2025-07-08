@@ -10,7 +10,7 @@ import {
   Dimensions,
 } from 'react-native';
 import * as Yup from 'yup';
-import styles from '../styles/signUpScreen.styles';
+import {styles}from '../styles/signUpScreen.styles';
 
 const phoneSchema = Yup.object().shape({
   phoneNumber: Yup.string()
@@ -23,13 +23,13 @@ const SignupScreen = ({ navigation }) => {
   const [error, setError] = useState('');
 
   const handleSendCode = async () => {
-    try {
-      await phoneSchema.validate({ phoneNumber });
-      setError('');
+    // try {
+    //   await phoneSchema.validate({ phoneNumber });
+    //   setError('');
       navigation.navigate('Verification');
-    } catch (err) {
-      setError(err.message);
-    }
+    // } catch (err) {
+    //   setError(err.message);
+    // }
   };
 
   return (

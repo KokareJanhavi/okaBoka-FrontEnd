@@ -2,7 +2,7 @@ import { StyleSheet, Dimensions } from 'react-native';
 import { COLORS } from './GlobalStyles';
 
 const { width, height } = Dimensions.get('window');
-
+const GRID_IMAGE_SIZE = (width - 60) / 3;
 export const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#35c1a7' },
   moodHeading: {

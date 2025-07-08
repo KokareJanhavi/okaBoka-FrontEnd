@@ -10,7 +10,7 @@ import {
   Dimensions,
 } from 'react-native';
 import * as Yup from 'yup';
-import styles from '../styles/aboutScreen.styles';
+import {styles} from '../styles/aboutScreen.styles';
 
 const aboutSchema = Yup.object().shape({
   day: Yup.string()

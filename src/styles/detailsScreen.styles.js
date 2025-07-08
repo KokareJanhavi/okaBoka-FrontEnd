@@ -47,7 +47,7 @@ export const styles = StyleSheet.create({
   gridButton: {
     backgroundColor: '#fff',
     borderRadius: 10,
-    width: BUTTON_WIDTH,
+    width: '45%',
     paddingVertical: 12,
     alignItems: 'center',
     marginBottom: 15,
